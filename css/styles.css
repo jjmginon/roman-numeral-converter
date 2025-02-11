@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* || RESET */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input,
+button {
+    font-family: inherit;
+}
+
+/* || UTILITY CLASSES */
+
+.nowrap {
+    white-space: nowrap;
+}
+
+/* || GENERAL STYLES */
+
+html {
+    font-family: "Libre Baskerville", serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    min-height: 100vh;
+    background: linear-gradient(to top, #9e895a 0%, #0a0c0e 50%);
+}
+
+p {
+    line-height: 1.5;
+}
+
+a:any-link {
+    color: #9e895a;
+}
+
+a:visited {
+    color: hsl(41, 27%, 40%);
+}
+
+a:hover,
+a:focus-visible {
+    color: hsl(41, 27%, 55%);
+}
+
+::selection {
+    color: #ddd;
+    background-color: #9e895a;
+}
+
+.container {
+    padding: 1.5rem;
+    border-radius: 8px;
+    max-width: 720px;
+    background-color: hsla(220, 12%, 15%, 0.44);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* || HEADER */
+
+header h1 {
+    margin: 1rem 0;
+    font-size: 1.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ddd;
+}
+
+header p {
+    font-size: 0.9rem;
+    text-align: justify;
+    color: #ddd;
+}
+
+header p:last-of-type {
+    margin-top: 1rem;
+}
+
+.features {
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid #8b949e;
+    border-radius: 8px;
+    color: #ddd;
+}
+
+.header__ul {
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* || MAIN */
+.inputs {
+    margin: 1rem 0 1rem;
+}
+
+.inputs input {
+    padding: 0 1rem;
+    width: 100%;
+    height: 3rem;
+    border: 1px solid #999;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+    transition: 0.1s ease-in-out;
+    outline: none;
+}
+
+.inputs input::placeholder {
+    color: #999;
+}
+
+.inputs input:focus {
+    border: 2px solid #9e895a;
+}
+
+.inputs p {
+    margin: 1rem;
+    font-size: 0.85rem;
+    text-align: center;
+    color: #ddd;
+}
+
+.inputs button {
+    width: 100%;
+    height: 3rem;
+    border: 1px solid #9e895a;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #ddd;
+    background-color: hsla(220, 12%, 15%, 0.44);
+    transition: background-image 0.5s ease-in-out;
+    cursor: pointer;
+    outline: none;
+}
+
+.inputs button:hover,
+.inputs button:focus-visible {
+    background-image: radial-gradient(#9e895a 0%, hsla(220, 12%, 15%, 0.1) 35%);
+}
+
+.inputs button:active {
+    transform: scale(0.98);
+}
+
+/* || FOOTER */
+
+.result {
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    font-weight: bolder;
+    text-align: center;
+}
+
+/* || MEDIA QUERIES */
+
+/* LARGE SCREENS */
+@media screen and (max-width: 720px) {
+    .features {
+        display: none;
+    }
+
+    .toggle-features {
+        display: block;
+        margin: 1rem auto;
+        padding: 0.5rem 1rem;
+        border: 1px solid #9e895a;
+        border-radius: 8px;
+        color: #ddd;
+        background-color: hsla(220, 12%, 15%, 0.44);
+        cursor: pointer;
+    }
+
+    .toggle-features:hover,
+    .toggle-features:focus-visible {
+        background-image: radial-gradient(#9e895a 0%, hsla(220, 12%, 15%, 0.1) 35%);
+    }
+
+    .toggle-features:focus {
+        outline: none;
+    }
+}
+
+/* HIDE BUTTON ON LARGE SCREENS */
+@media screen and (min-width: 721px) {
+    .toggle-features {
+        display: none;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Numeral Converter Webpage</title>
+    <meta name="description"
+        content="Convert decimal numbers to Roman numerals effortlessly with our Roman Numeral Converter. Built using HTML, CSS, and JavaScript, this tool provides accurate and quick conversions for all your needs.">
+    <meta name="author" content="JJ Ginon">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <section class="description">
+                <h1 class="header__h1">Roman Numeral Converter</h1>
+                <p class="header__p">
+                    According to <a href="https://www.britannica.com/art/palindrome">Britannica.com</a>, a Roman numeral
+                    is any of the symbols employed in a numerical notation system originating from ancient Rome. These
+                    symbols include I, V, X, L, C, D, and M, which correspond to the values 1, 5, 10, 50, 100, 500, and
+                    1,000, respectively, in the Hindu-Arabic numeral system.
+                </p>
+            </section>
+            <button id="toggle-features" class="toggle-features">Show Features</button>
+            <section class="features">
+                <h2 class="header__h2">Features:</h2>
+                <ul class="header__ul">
+                    <li>
+                        <strong>Accurate Conversion:</strong> Transforms numbers between 1 and 3999 into Roman numerals.
+                    </li>
+                    <li>
+                        <strong>Instant Results:</strong> Provides quick and efficient conversions.
+                    </li>
+                    <li>
+                        <strong>User-Friendly Interface:</strong> Simple and easy to use.
+                    </li>
+                </ul>
+            </section>
+        </header>
+        <main class="main inputs">
+            <input type="number" name="number" id="number">
+            <p>
+                Enter a number between
+                <span class="nowrap"> 1-3999</span>
+            </p>
+            <button type="submit" id="convert-btn">Convert</button>
+        </main>
+        <footer>
+            <p id="output" class="result"></p>
+        </footer>
+    </div>
+</body>
+
+</html>
