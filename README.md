@@ -1,5 +1,7 @@
 # Roman Numeral Converter
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6f53cb09-9910-4dc9-9d5b-922528d79ff9/deploy-status)](https://app.netlify.com/sites/my-roman-numeral-converter-app/deploys)
+
 ## Welcome to my Roman Numeral Converter!
 
 Effortlessly convert decimal numbers to Roman numerals with our interactive Roman Numeral Converter. Built using HTML, CSS, and JavaScript, this tool provides accurate and quick conversions for all your needs. Explore this project and see how it works! 🚀
