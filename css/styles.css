@@ -40,6 +40,15 @@ p {
     line-height: 1.5;
 }
 
+label {
+    display: block;
+    line-height: 1.5;
+}
+
+label span {
+    display: inline-block;
+}
+
 a:any-link {
     color: #9e895a;
 }
@@ -127,7 +136,7 @@ header p:last-of-type {
     border: 2px solid #9e895a;
 }
 
-.inputs p {
+.inputs label {
     margin: 1rem;
     font-size: 0.85rem;
     text-align: center;
