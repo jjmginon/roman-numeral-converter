@@ -4,7 +4,7 @@
 
 ## Welcome to my Roman Numeral Converter!
 
-Effortlessly convert decimal numbers to Roman numerals with our interactive Roman Numeral Converter. Built using HTML, CSS, and JavaScript, this tool provides accurate and quick conversions for all your needs. Explore this project and see how it works! 🚀
+Effortlessly convert decimal numbers to Roman numerals with our interactive Roman Numeral Converter. Built using HTML, CSS, and JavaScript, this tool provides accurate and quick conversions for all your needs. Explore this project and see how it works!
 
 ## Table of Contents
 
